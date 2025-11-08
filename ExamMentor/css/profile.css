@@ -1,0 +1,57 @@
+
+@import url("index.css");
+
+/* Page layout */
+.profile { padding: 28px 0 36px; }
+.profile-head {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+}
+.avatar {
+  width: 56px; height: 56px; display: grid; place-items: center;
+  border-radius: 50%; border: 1px solid var(--border); background: var(--card);
+  font-size: 1.4rem;
+}
+
+.profile-grid { align-items: start; }
+@media (max-width: 760px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+.profile-card { padding: 16px; }
+.profile-card h2 { margin: 0 0 8px; }
+
+/* Form fields */
+.field { margin-top: 12px; }
+label { display: inline-block; font-weight: 600; margin-bottom: 6px; }
+.input {
+  width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--fg);
+}
+.error { color: #dc2626; font-size: .9rem; min-height: 1.1em; margin: 6px 0 0; }
+.form-msg { text-align: left; font-weight: 600; margin-top: 10px; min-height: 1.2em; }
+
+.row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+
+/* Danger button */
+.danger {
+  border-color: #ef4444; color: #ef4444;
+}
+.danger:hover { background: #ef4444; color: #fff; }
+
+/* Saved courses chips */
+.chip-wrap { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 4px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid var(--border); background: var(--card); color: var(--fg);
+  border-radius: 999px; padding: 6px 10px;
+}
+.chip .x {
+  border: 1px solid var(--border); background: transparent; color: var(--fg);
+  border-radius: 999px; width: 22px; height: 22px; display: grid; place-items: center; cursor: pointer;
+  line-height: 1; font-size: 14px;
+}
+.chip .x:hover { background: color-mix(in srgb, var(--brand) 14%, transparent); }
+.small { font-size: .92rem; }
+
+
+.footer { border-top: 1px solid var(--border); text-align: center; padding: 16px 0; margin-top: 28px; color: var(--muted); }

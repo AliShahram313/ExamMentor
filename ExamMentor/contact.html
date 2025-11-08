@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — ExamMentor</title>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+
+  <header class="navbar" role="banner">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">ExamMentor</a>
+      <nav aria-label="Primary" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses/courses.html">Courses</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html" class="btn btn-ghost">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" title="Toggle theme">☀️🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container contact">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Contact Us</h1>
+        <p class="subtitle">We’d love to hear from you. Whether you have a question, feedback, or partnership idea — our team is here to help.</p>
+      </div>
+    </section>
+
+    <section class="contact-grid">
+   
+
+
+      <form id="contactForm" novalidate class="contact-form card">
+        <h2>Send us a message</h2>
+
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" type="text" class="input" placeholder="Your name" required />
+          <p class="error" id="nameErr"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" class="input" placeholder="you@example.com" required />
+          <p class="error" id="emailErr"></p>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" class="input" placeholder="How can we help?" required />
+          <p class="error" id="subjectErr"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" class="input" rows="5" placeholder="Type your message..." required></textarea>
+          <p class="error" id="messageErr"></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+
+  
+
+      <aside class="info card">
+        <h2>Get in touch</h2>
+        <ul class="info-list">
+          <li><strong>Email:</strong> support@exammentor.com</li>
+          <li><strong>Phone:</strong> +1 (555) 987-6543</li>
+          <li><strong>Address:</strong> 123 Learning Ave, Knowledge City</li>
+        </ul>
+
+        <h3>Follow us</h3>
+        <div class="social">
+          <a href="#" title="Facebook">🌐</a>
+          <a href="#" title="Twitter">🐦</a>
+          <a href="#" title="Instagram">📸</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  
+  
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> ExamMentor. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/contact.js" defer></script>
+</body>
+</html>

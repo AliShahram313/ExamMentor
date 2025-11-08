@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses — ExamMentor</title>
+  <link rel="stylesheet" href="../css/courses.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">ExamMentor</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="index.html" class="active">Courses</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../login.html" class="btn btn-ghost">Log In</a>
+        <a href="../signup.html" class="btn btn-primary">Sign Up</a>
+
+        <button id="themeToggle" class="theme-toggle" type="button" title="Toggle theme">
+          ☀️🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Explore Our Courses</h1>
+      <p class="subtitle">Choose your exam and start mastering your skills today!</p>
+    </section>
+
+    <section class="courses-grid">
+      <article class="course-card">
+        <img src="../images/TOEFL.png" alt="TOEFL Course" />
+        <div class="course-body">
+          <h2>TOEFL Preparation</h2>
+          <p>Boost your academic English with realistic TOEFL-style practice tests and expert strategies.</p>
+          <a href="OUR COURCES/TOEFL/toefl.html" class="btn btn-primary">View Course</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="../images/IELTS.png" alt="IELTS Course" />
+        <div class="course-body">
+          <h2>IELTS Preparation</h2>
+          <p>Improve your band score with personalized tasks and speaking simulations for Academic & General.</p>
+          <a href="OUR COURCES/ILETS/ielts.html" class="btn btn-primary">View Course</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="../images/SAT.png" alt="SAT Course" />
+        <div class="course-body">
+          <h2>SAT Preparation</h2>
+          <p>Sharpen your math, reading, and writing skills with targeted lessons and timed mock exams.</p>
+          <a href="OUR COURCES/SAT/sat.html" class="btn btn-primary">View Course</a>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <img src="../images/ACT.png" alt="ACT Course" />
+        <div class="course-body">
+          <h2>ACT Preparation</h2>
+          <p>Master English, math, and science reasoning through practice sessions and progress tracking.</p>
+          <a href="OUR COURCES/ACT/act.html" class="btn btn-primary">View Course</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> ExamMentor. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/courses.js" defer></script>
+</body>
+</html>
