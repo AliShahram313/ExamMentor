@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEFL Preparation Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #4CAF50, #45a049);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .Ex {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green color */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .hero .hero-text {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .hero .hero-text:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .hero .hero-text h2 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #4CAF50;
+            opacity: 0.9;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .hero .hero-text h2:hover {
+            opacity: 1;
+        }
+        .hero .hero-text p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #666;
+            opacity: 0.9;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .hero .hero-text p:hover {
+            opacity: 1;
+        }
+        .hero .hero-text .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #ff5722;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .hero .hero-text .btn:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+        .hero img {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+            max-height: 400px;
+        }
+        .hero img:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .section h2 {
+            color: #4CAF50;
+            opacity: 0.9;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .section h2:hover {
+            opacity: 1;
+        }
+        .section h3 {
+            color: #333;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .card img:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            margin: 20px 0 10px;
+            color: #333;
+            opacity: 0.9;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .card h3:hover {
+            opacity: 1;
+        }
+        .card p {
+            color: #777;
+        }
+        #contact-us {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+#contact-us {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+#contact-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contact-us p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.contact-info .info-item {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-info .info-item h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-info .info-item p {
+  font-size: 18px;
+  color: #666;
+}
+footer {
+            background-color: #45a049;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TOEFL Preparation Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="source.html">Sources and Tips</a>
+        <a href="practice.html">Practice Tests & Success Stories</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">
+            <h2>The Best Way For Your Learning</h2>
+            <p>Explore our comprehensive TOEFL preparation resources and ace your exam!</p>
+            <a href="#about-toefl" class="btn">Explore Courses</a>
+        </div>
+        <img src="images/photo.webp" alt="">
+    </div>
+    <main>
+        <section id="home" class="section">
+            <h2>Home Page</h2>
+            <p>Welcome to the TOEFL Preparation Website. Here, you will find all the resources and information you need to prepare for your TOEFL exam effectively.</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/toefl.jpg" alt="About TOEFL">
+                    <h3>About TOEFL</h3>
+                    <p>The TOEFL (Test of English as a Foreign Language) is a standardized test to measure the English language proficiency of non-native speakers. It is widely accepted by universities and institutions around the world.</p>
+                    <p>TOEFL scores are used for admission to English-speaking universities and colleges, scholarship programs, and visa applications. A good TOEFL score can enhance your academic and professional opportunities globally.</p>
+                    <p>If you need further information about TOEFL exam your can click explore more!!</p>
+                    <a href="https://www.ets.org/toefl.html" class="Ex">Explore more!</a>
+
+                </div>
+                <div class="card">
+                    <img src="images/register.webp" alt="Registration">
+                    <h3>Registration Information</h3>
+                    <p>To register for the TOEFL exam, follow these steps:</p>
+                    <ol>
+                        <li>Create an account on the official TOEFL website.</li>
+                        <li>Select a test date and location that suits you.</li>
+                        <li>Fill in the required personal and contact information.</li>
+                        <li>Pay the exam fee using a valid payment method.</li>
+                        <li>Confirm your registration and receive your admission ticket.</li>
+                    </ol>
+                    <p>The registration fee for the TOEFL exam varies by country. Please check the official TOEFL website for the exact fee in your region.</p>
+                    <p>TOEFL test centers are available worldwide. You can find the nearest test center using the official TOEFL test center locator tool on their website.</p>
+                </div>
+            </div>
+            <section id="contact-us">
+                <div class="container">
+                  <h2>Contact With TOEFL Organizers</h2>
+                  <p>We are here to help you with all your TOEFL-related queries. Please feel free to reach out to us using the contact details below.</p>
+                  
+                 
+                  <div class="contact-info">
+                    <div class="info-item">
+                      <h3>Email</h3>
+                      <p><a href="mailto:toefl@official.org">toefl@official.org</a></p>
+                    </div>
+                    <div class="info-item">
+                      <h3>Phone</h3>
+                      <p>+1 (800) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                      <h3>Address</h3>
+                      <a href="https://www.google.com/maps/search/Rosedale+Road,+Princeton+NJ+08541+-+United+States?entry=gmail&source=g" style="size: 0cap;"><img src="images/map.jpg" width="30" height="30">   click</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer>
+                <p>&copy; 2024 TOEFL Preparation Website. All Rights Reserved.</p>
+            </footer>
+            </body>
+            </html>
+              
+              
+    </main>
+</body>
+</html>
